@@ -33,7 +33,7 @@ header {
     background-color: #0B0B0C;
     justify-content: space-between;
     padding: 0 75px;
-    border: 1px #707070 solid;
+    /*border: 1px #707070 solid;*/
 }
 
 ul {
