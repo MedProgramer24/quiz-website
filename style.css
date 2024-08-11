@@ -1,0 +1,1128 @@
+body {
+    margin: 0;
+}
+
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: #A73737;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    /* border-bottom-width: 2px; */
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+header {
+    display: flex;
+    background-color: #0B0B0C;
+    justify-content: space-between;
+    padding: 0 75px;
+    border: 1px #707070 solid;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    padding: 10px;
+}
+
+ul li a:hover {
+    background-position: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+
+}
+
+ul li a {
+    background-image: linear-gradient(to right,
+            #54b3d6,
+            #54b3d6 50%,
+            #ffff 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+ul li a:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+ul li a:hover::before {
+    width: 100%;
+}
+
+/* section home */
+#home {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5%;
+    background-color: #121212;
+}
+
+.left {
+    flex-direction: column;
+    display: flex;
+    gap: 22px;
+    margin-top: 2%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraph h1 {
+    color: white;
+    font-size: xxx-large;
+}
+
+.paragraph img {
+    height: 29px;
+}
+
+.design {
+    display: flex;
+}
+
+.design h2 {
+    color: #E00B2E;
+    margin-left: 24px;
+}
+
+.design img {
+    height: 50px;
+}
+
+#start {
+    margin-top: 20px;
+    background-color: #E00B2E;
+    width: 131px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+#start:hover,
+.envoyer:hover {
+    background-color: blue;
+}
+
+#start a {
+    color: white;
+    font-size: medium;
+}
+
+#secondimg {
+    position: relative;
+    top: -50px;
+}
+
+/* section howToPlay */
+#howToPlay {
+    background-color: #121212
+}
+
+#howToPlay>h1 {
+    text-align: center;
+    color: #E00B2E;
+    margin: 0;
+    font-size: xx-large;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+    font-weight: bold;
+    max-width: 75%;
+    margin: 60px auto 0 auto;
+    gap: 35px;
+    padding-bottom: 95px;
+}
+
+hr {
+    width: 218px;
+    margin: 0;
+}
+
+.item1,
+.item2,
+.item3 {
+    border-radius: 10px;
+    background-color: #2C2929;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.circle {
+    border: 1px solid #E00B2E;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    background-color: #3F3737;
+    margin: 25px;
+}
+
+.circle h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.affichage {
+    background-color: #3F3737;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    height: 44px;
+    padding: 22px;
+}
+
+.bigOrder {
+    font-size: 19px;
+}
+
+/*about section*/
+.about {
+    height: 608px;
+    padding-bottom: 30px;
+    background-color: #121212;
+}
+
+.max-width {
+    max-width: 75%;
+    margin: 0px auto 0 auto;
+}
+
+.aboutDesign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E00B2E;
+    margin-bottom: 19px;
+}
+
+.about-titre {
+    font-size: 36px;
+    margin: 0 7px;
+}
+
+.leftline {
+    border: 1px solid #A73737;
+    height: 5px;
+    border-radius: 5px;
+    width: 94px;
+    background-color: #A73737;
+}
+
+.rightline {
+    border: 1px solid #A73737;
+    height: 5px;
+    border-radius: 5px;
+    width: 94px;
+    background-color: #A73737;
+}
+
+.aligenemt {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 102px;
+}
+
+.about img {
+    /* margin-top: 53px; */
+    width: 489px;
+    height: 377px;
+    border-radius: 9px;
+    height: 409px;
+    box-shadow: -17px -16px 5px #00000070;
+}
+
+
+.red {
+    color: red;
+}
+
+.about-paragraph {
+    width: 100%;
+    margin-left: 100px;
+}
+
+.brown-titre {
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+}
+
+.about-paragraph p {
+    font-size: 21px;
+    margin-top: 50px;
+    color: white;
+}
+
+.about-paragraph button {
+    cursor: pointer;
+    color: white;
+    margin-top: 22px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #A73737;
+    border: 1px white;
+    border-radius: 7px;
+}
+
+.about-paragraph button a {
+    color: white;
+}
+
+/* Contact US Section */
+.contact {
+    height: 608px;
+    background-color: #121212;
+
+}
+
+.resum-contact {
+    display: grid;
+    margin-top: 67px;
+    height: 252px;
+    align-items: end;
+}
+
+.phone,
+.email,
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.phone h1,
+.email h1,
+.location h1 {
+    color: #A73737;
+}
+
+.phone img {
+    height: 38px;
+}
+
+.same-start {
+    margin-left: 16px;
+}
+
+.email img,
+.location img {
+    height: 38px;
+}
+
+.phone p {
+    display: inline-block;
+    font-weight: bold;
+    font-size: larger;
+    margin-top: 5px;
+    color: white;
+}
+
+.email p,
+.location p {
+    display: inline-block;
+    font-weight: bold;
+    font-size: larger;
+    margin-top: 5px;
+    color: white;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.form {
+    margin-right: 107px;
+    margin-top: 20px;
+}
+
+form {
+    width: 338px;
+    display: grid;
+    gap: 36px;
+    margin-top: 40px;
+}
+
+form div {
+    display: grid;
+    gap: 16px;
+}
+
+form label {
+    color: #A73737;
+    font-size: large;
+    font-weight: bold;
+}
+
+form input {
+    padding-left: 23px;
+    font-size: medium;
+    border-color: #707070;
+    border-radius: 5px;
+    height: 36px;
+    width: 100%;
+    background-color: #3F3737;
+    color: white;
+
+}
+
+input::placeholder {
+    color: white;
+}
+
+#feedback {
+    height: 100px;
+}
+
+.envoyer {
+    cursor: pointer;
+    width: 100px;
+    background-color: #A73737;
+    color: white;
+    padding-right: 16px;
+}
+
+/*footer*/
+footer {
+    background: #2A2525;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+footer a {
+    color: #A73737;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    header {
+        padding: 4px 20px;
+    }
+
+    header img {
+        width: 61px;
+        height: 63px;
+        padding-left: 4px;
+    }
+
+    ul {
+        padding: 0;
+        align-items: center;
+    }
+
+    ul li {
+        padding: 5px;
+    }
+
+    ul li a {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .paragraph img {
+        height: 17px;
+    }
+
+    #home {
+        padding: 5% 7% 8% 12%;
+    }
+
+    .left {
+        gap: 13px;
+    }
+
+    .paragraph h1 {
+        font-size: xx-large;
+        margin-bottom: 0;
+        align-items: flex-end;
+    }
+    .design {
+        align-items: center;
+    }
+
+    .design img {
+        height: 38px;
+    }
+
+    .design h2 {
+        margin-left: 8px;
+        font-size: 21px;
+    }
+
+    img#firstImage {
+        height: 164px;
+        width: 148px;
+    }
+
+    #start {
+        margin-left: 8px;
+        margin-top: 0px;
+        width: 91px;
+        height: 32px;
+    }
+
+    .email p,
+    .location p {
+        font-size: medium;
+    }
+
+    .email img,
+    .location img {
+        height: 25px;
+    }
+
+    form {
+        width: 225px;
+        margin-right: 0;
+    }
+
+    #start a {
+        color: white;
+        font-size: 12px;
+    }
+
+    .right {
+        margin-left: 11px;
+        margin-top: 16px;
+    }
+
+    #secondimg {
+        position: relative;
+        top: -42px;
+        width: 145px;
+        height: 72px;
+    }
+
+    #howToPlay>h1 {
+        font-size: x-large;
+        padding-top: 20px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 67%;
+    }
+
+    .circle {
+        margin: 10px;
+        height: 53px;
+        width: 53px;
+
+    }
+
+    .circle h2 {
+        position: relative;
+        bottom: 15px;
+    }
+
+    .affichage {
+        padding: 10px;
+    }
+
+    .affichage img {
+        width: 96px;
+    }
+
+    p.order {
+        margin: 7px;
+    }
+
+    .bigOrder {
+        margin: 12px;
+        font-size: 19px;
+    }
+
+    .about-titre {
+        font-size: x-large;
+    }
+
+    .rightline,
+    .leftline {
+        width: 46px;
+    }
+
+    div#imgMap {
+        display: flex;
+        justify-content: center;
+    }
+    .about {
+        height: 100%;
+    }
+
+    .about img {
+        width: 100%;
+        height: 207px;
+    }
+
+    .aboutDesign {
+        padding-top: 19px;
+    }
+
+    .aligenemt {
+        flex-direction: column;
+        margin-top: 46px;
+    }
+
+    .about-paragraph {
+        margin: 0;
+    }
+
+    .about-paragraph p {
+        letter-spacing: 1px;
+        font-size: 17px;
+        margin-top: 24px;
+    }
+
+    .container1 {
+        flex-direction: column-reverse;
+        padding-bottom: 32px;
+    }
+
+    .contact {
+        height: 100%;
+    }
+
+    .resum-contact {
+        height: 100%;
+    }
+
+    .brown-titre {
+        font-size: x-large;
+    }
+
+    form input {
+        width: 87%;
+    }
+
+    .phone h1,
+    .email h1,
+    .location h1 {
+        font-size: 18px;
+    }
+
+    footer a {
+
+        font-size: medium;
+    }
+
+    .scroll-up-btn.show {
+        bottom: 87px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        padding: 4px 29px;
+    }
+
+    header img {
+        width: 75px;
+        height: 75px;
+        /* padding-left: 33px; */
+    }
+
+    ul {
+        padding: 0;
+        align-items: center;
+    }
+
+    ul li {
+        padding: 5px;
+    }
+
+    ul li a {
+        font-size: 20px;
+    }
+
+    #home {
+        padding: 5% 3% 5% 7%;
+    }
+
+    .left {
+        gap: 11px;
+    }
+
+    .paragraph h1 {
+        font-size: xx-large;
+        align-items: flex-end;
+    }
+
+    .design img {
+        height: 38px;
+    }
+
+    .design h2 {
+        margin-left: 8px;
+        font-size: 16px;
+    }
+
+    img#firstImage {
+        height: 256px;
+        width: 277px;
+    }
+
+    #start {
+        margin-left: 8px;
+        margin-top: 0px;
+        width: 91px;
+        height: 32px;
+    }
+
+    .paragraph img {
+        height: 33px;
+
+    }
+
+    .item1,
+    .item2,
+    .item3 {
+        gap: 15px;
+    }
+
+    .email p,
+    .location p {
+        font-size: medium;
+    }
+
+    .email img,
+    .location img {
+        height: 25px;
+    }
+
+    form {
+        margin-right: 0;
+    }
+
+    #start a {
+        color: white;
+        font-size: 12px;
+    }
+
+    .right {
+        margin-left: 11px;
+        margin-top: 16px;
+    }
+
+    #secondimg {
+        position: relative;
+        top: -42px;
+        width: 270px;
+        height: 72px;
+    }
+
+    #howToPlay>h1 {
+        font-size: x-large;
+        padding-top: 20px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 67%;
+    }
+
+    .circle {
+        margin: 10px;
+        height: 53px;
+        width: 53px;
+
+    }
+
+    .circle h2 {
+        position: relative;
+        bottom: 15px;
+    }
+
+    .affichage {
+        padding: 10px;
+    }
+
+    .affichage img {
+        width: 96px;
+    }
+
+    p.order {
+        margin: 7px;
+    }
+
+    .bigOrder {
+        margin: 27px;
+        font-size: 19px;
+    }
+
+    .about-titre {
+        font-size: x-large;
+    }
+
+    .rightline,
+    .leftline {
+        width: 46px;
+    }
+
+    div#imgMap {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about img {
+        width: 72%;
+        height: 207px;
+    }
+
+    .aligenemt {
+        flex-direction: column;
+        margin-top: 46px;
+    }
+
+    .about-paragraph {
+        margin: 0;
+    }
+
+    .about-paragraph p {
+        letter-spacing: 1px;
+        font-size: 19px;
+        margin-top: 32px;
+    }
+
+    .container1 {
+        flex-direction: column-reverse;
+        padding-bottom: 32px;
+    }
+
+    .contact {
+        height: 100%;
+    }
+
+    .resum-contact {
+        height: 100%;
+    }
+
+    .brown-titre {
+        font-size: x-large;
+    }
+
+    form input {
+        width: 87%;
+    }
+
+    .phone h1,
+    .email h1,
+    .location h1 {
+        font-size: 18px;
+    }
+
+    footer a {
+
+        font-size: medium;
+    }
+
+    .scroll-up-btn.show {
+        bottom: 87px;
+    }
+
+    .max-width {
+        max-width: 81%;
+
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    header {
+        padding: 4px 29px;
+    }
+
+    header img {
+        width: 75px;
+        height: 75px;
+        /* padding-left: 33px; */
+    }
+
+    ul {
+        padding: 0;
+        align-items: center;
+    }
+
+    ul li {
+        padding: 5px;
+    }
+
+
+    ul li a {
+        font-size: 20px;
+    }
+
+    #home {
+        padding: 5% 3% 5% 7%;
+    }
+
+    .left {
+        gap: 11px;
+    }
+
+    .paragraph h1 {
+        font-size: xx-large;
+        align-items: flex-end;
+    }
+
+    .design img {
+        height: 38px;
+    }
+
+    .design h2 {
+        margin-left: 8px;
+        font-size: 16px;
+    }
+
+    img#firstImage {
+        height: 256px;
+        width: 277px;
+    }
+
+    #start {
+        margin-left: 8px;
+        margin-top: 0px;
+        width: 91px;
+        height: 32px;
+    }
+
+    .paragraph img {
+        height: 33px;
+
+    }
+
+    .item1,
+    .item2,
+    .item3 {
+        gap: 15px;
+    }
+
+    .email p,
+    .location p {
+        font-size: medium;
+    }
+
+    .email img,
+    .location img {
+        height: 25px;
+    }
+
+    form {
+        margin-right: 0;
+    }
+
+    #start a {
+        color: white;
+        font-size: 12px;
+    }
+
+    .right {
+        margin-left: 11px;
+        margin-top: 16px;
+    }
+
+    #secondimg {
+        position: relative;
+        top: -42px;
+        width: 270px;
+        height: 72px;
+    }
+
+    #howToPlay>h1 {
+        font-size: xx-large;
+        padding-top: 20px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 90%;
+        gap: 19px
+    }
+
+    .circle {
+        margin: 10px;
+        height: 53px;
+        width: 53px;
+
+    }
+
+    .circle h2 {
+        position: relative;
+        bottom: 15px;
+    }
+
+    .affichage {
+        padding: 10px;
+    }
+
+    .affichage img {
+        width: 96px;
+    }
+
+    p.order {
+        margin: 7px;
+    }
+
+    .bigOrder {
+        margin: 27px;
+        font-size: 19px;
+    }
+
+    .about-titre {
+        font-size: xx-large;
+    }
+
+    .rightline,
+    .leftline {
+        width: 46px;
+    }
+
+    div#imgMap {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about img {
+        width: 293px;
+        height: 277px;
+    }
+
+    .aligenemt {
+        flex-direction: row;
+        margin-top: 60px;
+    }
+
+    .about-paragraph {
+        margin-left: 39px;
+    }
+
+    .about-paragraph p {
+        letter-spacing: 1px;
+        font-size: 19px;
+        margin-top: 32px;
+    }
+
+    .container1 {
+        padding-bottom: 32px;
+    }
+
+    .contact {
+        height: 100%;
+    }
+
+    .resum-contact {
+        height: 100%;
+        gap: 14px;
+        margin-top: 77px;
+    }
+
+    .brown-titre {
+        font-size: x-large;
+    }
+
+    form input {
+        width: 87%;
+    }
+
+    .phone h1,
+    .email h1,
+    .location h1 {
+        font-size: 18px;
+    }
+
+    footer a {
+
+        font-size: medium;
+    }
+
+    .scroll-up-btn.show {
+        bottom: 87px;
+    }
+
+    .max-width {
+        max-width: 81%;
+
+    }
+
+    .about {
+        height: 100%;
+    }
+
+    .form {
+        margin-left: 55px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container1 {
+        gap: 78px;
+    }
+
+
+    .max-width{
+        padding-top: 30px;
+    }
+    .about {
+        height: 100%;
+        padding-bottom: 51px;
+    }
+
+    #imgMap {
+        align-self: center;
+    }
+
+    .about img {
+        width: 369px;
+    }
+
+    .about-paragraph p {
+        letter-spacing: 3px;
+        font-size: 23px;
+    }
+}
