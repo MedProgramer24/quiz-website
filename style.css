@@ -47,6 +47,7 @@ li {
 
 ul li a:hover {
     background-position: 0;
+    
 }
 
 a {
@@ -141,7 +142,7 @@ ul li a:hover::before {
 
 #start:hover,
 .envoyer:hover {
-    background-color: blue;
+    background-color: rgb(238, 255, 0);
 }
 
 #start a {
@@ -236,7 +237,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #E00B2E;
+    color: #ffffff;
     margin-bottom: 19px;
 }
 
